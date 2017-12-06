@@ -1,5 +1,4 @@
 # Snake Game
 Another game in Processing
 
-![image circle](https://user-images.githubusercontent.com/34218434/33666302-45376e42-da78-11e7-99e1-c8948b5040d1.png)
-
+![image circle](https://user-images.githubusercontent.com/34218434/33666470-d2da65e2-da78-11e7-843d-008ac786556b.png)
