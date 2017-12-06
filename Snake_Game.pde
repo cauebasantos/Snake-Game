@@ -14,26 +14,27 @@ void setup() {
 
 void draw() {
 
-  if (!snake.isDead()) {
-    
-    fill(155);
-    rect(0, 0, width, height);
-    fill(21);
-    rect(GRID, GRID, width - 2*GRID, height - 2*GRID);
+
+  fill(155);
+  rect(0, 0, width, height);
+  fill(21);
+  rect(GRID/2, GRID/2, width - GRID, height - GRID);
 
 
-    if (snake.intersects(food)) {
-      snake.eat();
-      food = new Food();
-    }
 
-    food.display();
 
-    snake.move();
-    snake.display();
+  food.display();
+
+  if (snake.intersects(food)) {
+    snake.eat();
+    food = new Food();
   }
-  else{
-    
+
+  snake.move();
+  snake.display();
+
+  if (snake.isDead()) {
+    noLoop();
   }
 }
 

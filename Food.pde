@@ -1,7 +1,7 @@
-class Food extends Square {
+class Food extends Circle {
 
   Food() {
-    super(int(random(1, width/GRID - 1))*GRID, int(random(1, height/GRID - 1))*GRID, GRID, 
+    super(int(random(2, width/GRID - 2))*GRID, int(random(2, height/GRID - 2))*GRID, GRID, 
       color(random(255), random(255), random(255)));
   }
 }
